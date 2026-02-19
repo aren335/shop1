@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* --- THEME VARIABLES --- */
+:root {
+  --bg-gradient: linear-gradient(135deg, #fff0f5 0%, #ffe4e1 100%);
+  --coquette-card: rgba(255, 255, 255, 0.85);
+  --pastel-pink: #ffd6e8;
+  --pastel-rose: #ffb3c6;
+  --accent-pink: #ff7eb9;
+  --deep-pink: #d63384;
+  --text-dark: #6b4b5a;
+  --white: #ffffff;
+}
+
+/* BRAND */
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.logo-img {
+  height: 50px; 
+  width: auto;
+}
+
+
+.store-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+/* CART BUTTON */
+.cart-btn {
+  background-color: #f6c1cc;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+}
+
+.cart-btn i {
+  margin-right: 6px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .store-name {
+    display: none;
+  }
+
+  .logo-img {
+    height: 42px;
+  }
+
+  .cart-btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
+
+/* --- RESET & GLOBAL STYLES --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* --- LOGIN PAGE STYLES --- */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: var(--coquette-card);
+  padding: 40px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--white);
+  box-shadow: 0 15px 35px rgba(255, 182, 193, 0.4);
+  text-align: center;
+  width: 100%;
+  max-width: 380px;
+}
+
+.login-card h2 {
+  color: var(--deep-pink);
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.login-card p {
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: 1px solid var(--pastel-pink);
+  outline: none;
+  background: var(--white);
+  transition: 0.3s;
+}
+
+.login-card input:focus {
+  border-color: var(--accent-pink);
+  box-shadow: 0 0 8px rgba(255, 126, 185, 0.2);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: var(--accent-pink);
+  color: var(--white);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: var(--deep-pink);
+  transform: translateY(-2px);
+}
+
+/* --- SHOP HEADER --- */
+header {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(255, 182, 193, 0.2);
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.store-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--deep-pink);
+  letter-spacing: 1px;
+}
+
+.logo-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+ object-fit: cover;
+  border: 2px solid var(--pastel-pink);
+}
+
+.logo-img:hover { transform: scale(1.05); }
+
+.cart-btn {
+  background: var(--pastel-pink);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--deep-pink);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.cart-btn:hover { background: var(--pastel-rose); }
+
+/* --- CATEGORY FILTERS (FUNCTIONAL) --- */
+.filter-section {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 25px;
+  border: 2px solid var(--pastel-pink);
+  border-radius: 30px;
+  background: var(--white);
+  color: var(--text-dark);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn.active {
+  background: var(--accent-pink);
+  color: var(--white);
+  border-color: var(--accent-pink);
+}
+
+/* --- PRODUCT GRID --- */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+  padding: 0 5% 80px;
+}
+
+.product {
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  border: 1px solid rgb(255, 182, 192, 0.3);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.product:hover {
+  box-shadow: 0 15px 30px rgba(255, 126, 185, 0.25);
+}
+
+.product:hover img {
+  transform: scale(1.08);
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.product h4 {
+  min-height: 48px;
+  text-align: center;
+}
+
+.product p {
+  text-align: center;
+}
+
+
+.add-btn {
+  background: var(--accent-pink);
+  color: var(--white);
+  border: none;
+  padding: 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: auto;
+  transition: 0.3s;
+}
+
+.add-btn i {
+  margin-right: 8px; /* Adds space between icon and text */
+  font-size: 0.9em;   /* Makes icon slightly smaller to match text */
+}
+
+.product {
+ padding: 15px;
+}
+
+.add-btn:hover { background: var(--deep-pink); }
+
+/* --- CART SIDEBAR --- */
+#cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100%;
+  background: var(--white);
+  z-index: 2000;
+  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  box-shadow: -5px 0 25px rgba(0,0,0,0.1);
+}
+
+#cart-sidebar.open { right: 0; }
+
+.cart-header {
+  padding: 25px;
+  background: var(--pastel-rose);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-items {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.remove-item {
+  background: #fff0f3;
+  color: #ff4d6d;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-item:hover { background: #ff4d6d; color: var(--white); }
+
+.cart-footer {
+  padding: 25px;
+  border-top: 1px solid #eee;
+  background: #fff9fb;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 15px;
+  background: var(--deep-pink);
+  color: var(--white);
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover { opacity: 0.9; }
+
+/* --- ATTENDANCE LAYOUT --- */
+
+.attendance-container {
+    display: flex;
+    flex-direction: row; /* Aligns items horizontally */
+    align-items: flex-start; /* Keeps tops aligned if heights differ */
+    justify-content: center;
+    gap: 30px; /* Space between the form and the table */
+    padding: 40px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* Make the registration box match the login style but allow it to sit in flow */
+.registration-box {
+    flex: 0 0 380px; /* Do not grow, do not shrink, stay 380px wide */
+    background: var(--coquette-card);
+    padding: 40px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--white);
+    box-shadow: 0 15px 35px rgba(255, 182, 193, 0.4);
+    text-align: center;
+}
+
+/* --- TABLE STYLING --- */
+.table-card {
+    flex: 1; /* Grows to fill the rest of the container */
+    background: var(--coquette-card);
+    padding: 30px;
+    border-radius: 30px;
+    border: 2px solid var(--white);
+    box-shadow: 0 15px 35px rgba(255, 182, 193, 0.2);
+    min-width: 0; /* Prevents table from breaking flexbox width */
+}
+.table-card h2 {
+    color: var(--deep-pink);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.table-wrapper {
+    overflow-x: auto; /* For mobile responsiveness */
+}
+
+#qTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#qTable th {
+    background-color: var(--pastel-pink);
+    color: var(--deep-pink);
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+#qTable td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--pastel-pink);
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+#qTable tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#qTable th:first-child { border-radius: 15px 0 0 0; }
+#qTable th:last-child { border-radius: 0 15px 0 0; }
+
+/* Placeholder for empty table */
+#qTable tbody:empty::after {
+    content: "No members registered yet.";
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: var(--pastel-rose);
+    font-style: italic;
+}
+
+
+/* Styles for Facebook-style password toggle */
+.password-container {
+  position: relative;
+  width: 100%;
+}
+.password-container input {
+  width: 100%;
+  padding-right: 40px; /* Space for the eye icon */
+}
+.eye-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666; /* Subtle gray like Facebook */
+  font-size: 16px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eye-btn:hover {
+  color: #333; /* Darker on hover */
+}

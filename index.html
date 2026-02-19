@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Aren Beauty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="login-body">
+  <div class="login-card">
+    <h2>Aren's Beauty Shop</h2>
+    <form class="password-wrapper" action="#" method="post">
+      <input type="email" id="email" placeholder="Enter Email" required aria-describedby="email-help">
+
+   <div class="password-container">
+  <input type="password" id="password" placeholder="Enter Password" required aria-describedby="password-help">
+  <button type="button" id="toggle-password" class="eye-btn" aria-label="Toggle password visibility">
+    <i class="fa-solid fa-eye" id="eye-icon"></i> </button>
+</div>
+
+      <button type="submit" id="submit" class="login-btn" aria-label="Submit login form">Login</button>
+    </form>
+    <div id="email-help" class="sr-only">Enter a valid email address to log in.</div>
+    <div id="password-help" class="sr-only">Enter your password to log in.</div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

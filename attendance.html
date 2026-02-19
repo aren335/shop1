@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration| Aren Beauty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="brand-container">
+        <h2 class="store-name">Registration Dashboard</h2>
+    </div>
+    <a href="home.html" class="cart-btn">Back to Shop</a>
+</header>
+
+<div class="attendance-container">
+    <div class="login-card registration-box">
+        <h2>Register Here!</h2>
+        <p>Fill in the details to add to the list</p>
+        <input type="text" id="fn" placeholder="First name *">
+        <input type="text" id="mn" placeholder="Middle name (optional)">
+        <input type="text" id="ln" placeholder="Last name *">
+        <input type="number" id="age" placeholder="Age *" min="1"> 
+        <input type="email" id="em" placeholder="Email *">
+        <button id="addBtn" class="login-btn">Add to Attendance</button>
+    </div>
+    
+    <div class="table-card">
+        <h2>Member List</h2>
+        <div class="table-wrapper">
+            <table id="qTable">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Middle Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Email Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

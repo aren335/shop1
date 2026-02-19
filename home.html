@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aren Beauty Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<header class="site-header">
+   <div class="brand-container">
+        <a href="#" class="logo-link">
+            <img src="img/logo.png" class="logo-img">
+            <span class="store-name">Aren Beauty</span>
+        </a>
+    </div>
+
+    <div style="display:flex; gap:10px;">
+        <a href="attendance.html" class="cart-btn">Dashboard</a>
+        <button id="logout" class="cart-btn">Logout</button>
+        <button id="open-cart" class="cart-btn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            Cart (<span id="cart-count">0</span>)
+        </button>
+    </div>
+</header>
+
+<section class="filter-section">
+    <button class="filter-btn active" data-category="makeup">Makeup</button>
+    <button class="filter-btn" data-category="skincare">Skincare</button>
+    <button class="filter-btn" data-category="hairbody">Hair & Body</button>
+</section>
+
+<main class="products-grid">
+<div class="product" data-category="makeup">
+     <img src="img/victoriazxcyi.jpg" alt="Makeup Primer">
+     <h4 class="p-name">Makeup Primer</h4>
+     <p>₱ <span class="p-price">1400</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<!--MAKEUP-->
+<div class="product" data-category="makeup">
+     <img src="img/Flower Knows Little AngelMatte Lipstick.jpg" alt="Matte Lipstick Nude">
+     <h4 class="p-name">Matte Lipstick Nude</h4>
+     <p>₱ <span class="p-price">2500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+ <div class="product" data-category="makeup">
+       <img src="img/Flower Knows Violet Strawberry Rococo Glowy Lip Gloss-Moisturizing Tinted Lip Plumper Oil-Hydrating.jpg" alt="Glossy Lip Tint">
+       <h4 class="p-name">Glossy Lip Tint</h4>
+       <p>₱ <span class="p-price">800</span></p>
+       <button class="add-btn">Add to Cart</button>
+</div>
+
+ <div class="product" data-category="makeup">
+       <img src="img/Liquid Touch Weightless Foundation - Rare Beauty by Selena Gomez _ Sephora.jpg" alt="Liquid Foundation">
+       <h4 class="p-name">Liquid Foundation</h4>
+       <p>₱ <span class="p-price">499</span></p>
+       <button class="add-btn">Add to Cart</button>
+ </div>
+
+  <div class="product" data-category="makeup">
+       <img src="img/Flower Knows Strawberry Cupid Collection Pressed Powder - 01 Soft Lavender.jpg" alt="Powder Foundation">
+       <h4 class="p-name">Powder Foundation</h4>
+       <p>₱ <span class="p-price">459</span></p>
+       <button class="add-btn">Add to Cart</button>
+ </div>
+
+   <div class="product" data-category="makeup">
+        <img src="img/colored clay cc undereye corrector.jpg" alt="Concealer Cream">
+        <h4 class="p-name">Concealer Cream</h4>
+        <p>₱ <span class="p-price">900</span></p>
+        <button class="add-btn">Add to Cart</button>
+ </div>
+
+ <div class="product" data-category="makeup">
+       <img src="img/Flower Knows Strawberry Rococo Embossed Blush,Bright Pink Matte Powder Blush for Cheeks,Buildable & Blendable Face Makeup,Soft Long-Lasting Cute Make.jpg" alt="Blush On Pink">
+       <h4 class="p-name">Blush On Pink</h4>
+       <p>₱ <span class="p-price">1000</span></p>
+       <button class="add-btn">Add to Cart</button>
+ </div>
+
+ <div class="product" data-category="makeup">
+       <img src="img/Flowerknows little angel embossed highlighter in shade paradise lost 💕.jpg" alt="Highlighter Glow">
+       <h4 class="p-name">Highlighter Glow</h4>
+       <p>₱ <span class="p-price">2300</span></p>
+       <button class="add-btn">Add to Cart</button>
+ </div>
+
+ <div class="product" data-category="makeup">
+       <img src="img/Butterfly Cloud Collar Embossed Highlight & Contour Palette_.jpg" alt="Bronzer Palette">
+       <h4 class="p-name">Bronzer Palette</h4>
+       <p>₱ <span class="p-price">1500</span></p>
+       <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/Flower Knows Strawberry Cupid Makeup Palette Pick 1.jpg" alt="Eyeshadow Nude Palette">
+     <h4 class="p-name">Eyeshadow Nude Palette</h4>
+     <p>₱ <span class="p-price">1500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/Flower Knows strawberry makeup palette!.jpg" alt="Eyeshadow Pink Palette">
+     <h4 class="p-name">Eyeshadow Pink Palette</h4>
+     <p>₱ <span class="p-price">2000</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/Flower Knows Makeup _ New Flower Knows Cosmetics Butterfly Cloud Collar Liquid Eyeliner Ink Black _ Color_ Black _ Size_ Os.jpg" alt="Liquid Eyeliner">
+     <h4 class="p-name">Liquid Eyeliner</h4>
+     <p>₱ <span class="p-price">800</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>     
+
+<div class="product" data-category="makeup">
+     <img src="img/Flower Knows Unisex Makeup.jpg" alt="Pencil Eyeliner">
+     <h4 class="p-name">Pencil Eyeliner</h4>
+     <p>₱ <span class="p-price">800</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>    
+
+<div class="product" data-category="makeup">
+     <img src="img/Kylie Cosmetics Kylash Volume Mascara.jpg" alt="Mascara Volume">
+     <h4 class="p-name">Mascara Volume</h4>
+     <p>₱ <span class="p-price">1200</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/download (43).jpg" alt="Mascara Waterproof">
+     <h4 class="p-name">Mascara Waterproof</h4>
+     <p>₱ <span class="p-price">1500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/1 Pair Reusable Self-Adhesive Eyelashes Glue Free Waterproof False Eyelashes Makeup No Required Or Glue Liner Lashes N4R0 - Walmart_com.jpg" alt="False Eyelashes">
+     <h4 class="p-name">False Eyelashes</h4>
+     <p>₱ <span class="p-price">500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/MarissaGrace_'s SEPHORA Product Set on LTK.jpg" alt="Eyebrow Pencil">
+     <h4 class="p-name">Eyebrow Pencil</h4>
+     <p>₱ <span class="p-price">900</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>     
+
+<div class="product" data-category="makeup">
+     <img src="img/☁︎ april 24 '19 ☁︎ kybrow gel ($16_00) ☁︎.jpg" alt="Eyebrow Gel">
+     <h4 class="p-name">Eyebrow Gel</h4>
+     <p>₱ <span class="p-price">1000</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>    
+
+<div class="product" data-category="makeup">
+     <img src="img/Kylie Cosmetics Mattifying Setting Spray at Nordstrom.jpg" alt="Setting Spray">
+     <h4 class="p-name">Setting Spray</h4>
+     <p>₱ <span class="p-price">1500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/1PC Swan Ballet Series Music box Loose Setting Powder Pink_Purple Loose Powder, 12g (C01).jpg" alt="Setting Powder">
+     <h4 class="p-name">Setting Powder</h4>
+     <p>₱ <span class="p-price">3200</span></p>
+     <button class="add-btn">Add to Cart</button> 
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/download (44).jpg" alt="Lip Scrub">
+     <h4 class="p-name">Lip Scrub</h4>
+     <p>₱ <span class="p-price">1200</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+      <img src="img/Kylie Cosmetics Skin Lip Butter at Nordstrom.jpg" alt="Lip Balm">
+      <h4 class="p-name">Lip Balm</h4>
+      <p>₱ <span class="p-price">800</span></p>
+      <button class="add-btn">Add to Cart</button>
+</div>
+ 
+<div class="product" data-category="makeup">
+     <img src="img/The Sweetie Bear 4-Color Concealer Palette.jpg" alt="Color Corrector">
+     <h4 class="p-name">Color Corrector</h4>
+     <p>₱ <span class="p-price">1100</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/The Best Moisturizing Foundations and BB Creams For Mature Skin.jpg" alt="BB Cream">
+     <h4 class="p-name">BB Cream</h4>
+     <p>₱ <span class="p-price">899</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>     
+
+<div class="product" data-category="makeup">
+     <img src="img/IT Cosmetics CC+ Cream with SPF 50+ Is Lightweight and Hydrating.jpg" alt="CC Cream">
+     <h4 class="p-name">CC Cream</h4>
+     <p>₱ <span class="p-price">500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/10 peças Conjunto de esponja de maquiagem Aleatória.jpg" alt="Makeup Sponge">
+     <h4 class="p-name">Makeup Sponge</h4>
+     <p>₱ <span class="p-price">400</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>    
+
+<div class="product" data-category="makeup">
+     <img src="img/download.jpg" alt="Brush Set">
+     <h4 class="p-name">Brush Set</h4>
+     <p>₱ <span class="p-price">1500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+      <img src="img/Mae Peony Compact.jpg" alt="Compact Mirror">
+      <h4 class="p-name">Compact Mirror</h4>
+      <p>₱ <span class="p-price">500</span></p>
+      <button class="add-btn">Add to Cart</button>
+</div>     
+
+<div class="product" data-category="makeup">
+     <img src="img/uekeboag 3Pcs Quilted Cotton Makeup Bag,Coquette Quilted Toiletry Bag for Women and Girls,Floral Coquette Pouch,Cute Kawaii Travel Cosmetic Bags(3Pcs Small Bow).jpg" alt="Makeup Bag">
+     <h4 class="p-name">Makeup Bag</h4>
+     <p>₱ <span class="p-price">800</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>     
+
+<div class="product" data-category="makeup">
+     <img src="img/download (45).jpg" alt="Lip Liner">
+     <h4 class="p-name">Lip Liner</h4>
+     <p>₱ <span class="p-price">1700</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>     
+
+<div class="product" data-category="makeup">
+     <img src="img/Flower Knows Pressed Setting Powder.jpg" alt="Pressed Powder">
+     <h4 class="p-name">Pressed Powder</h4>
+     <p>₱ <span class="p-price">3000</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/୨୧.jpg" alt="Loose Powder">
+     <h4 class="p-name">Loose Powder</h4>
+     <p>₱ <span class="p-price">1300</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div> 
+
+<div class="product" data-category="makeup">
+     <img src="img/Gentle Makeup Removers That Actually Work on Sensitive and Acne-Prone Skin.jpg" alt="Makeup Remover">
+     <h4 class="p-name">Makeup Remover</h4>
+     <p>₱ <span class="p-price">876</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/download (46).jpg" alt="Micellar Wate">
+     <h4 class="p-name">Micellar Water</h4>
+     <p>₱ <span class="p-price">600</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/Charlotte Tilbury Makeup _ Newc_T Pretty Glowing Beauty _ Color_ Pink _ Size_ Os.jpg" alt="Face Palette">
+     <h4 class="p-name">Face Palette</h4>
+     <p>₱ <span class="p-price">3500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+     <img src="img/Rare Beauty by Selena Gomez Weightless Eyeshadow Primer- Always An Optimist Collection 0_10 oz_ 3 mL.jpg" alt="Eye Primer">
+     <h4 class="p-name">Eye Primer</h4>
+     <p>₱ <span class="p-price">570</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>  
+
+<div class="product" data-category="makeup">
+     <img src="img/LAWLESS Women's Forget The Filler Lip Plumper Line Gloss, Lavender Sorbet, 0_11 oz.jpg" alt="Lip Plumper">
+     <h4 class="p-name">Lip Plumper</h4>
+     <p>₱ <span class="p-price">974</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="makeup">
+      <img src="img/Kosette Beauty Market _ Monthly Curated K-beauty Bestsellers.jpg" alt="Makeup Fix Spray">
+      <h4 class="p-name">Makeup Fix Spray</h4>
+      <p>₱ <span class="p-price">1000</span></p>
+      <button class="add-btn">Add to Cart</button>
+ </div>
+
+
+<!-- SKINCARE  -->
+ <div class="product" data-category="skincare">
+     <img src="img/Madagascar Centella Poremizing Deep Cleansing Foam (1).jpg" alt="Hydrating Facial Wash">
+      <h4 class="p-name">Hydrating Facial Wash</h4>
+      <p>₱ <span class="p-price">1000</span></p>
+      <button class="add-btn">Add to Cart</button>
+    </div>
+
+ <div class="product" data-category="skincare">
+      <img src="img/Green Plum Refreshing Cleanser.jpg" alt="Green Plum Cleanser">
+      <h4 class="p-name">Green Plum Cleanser</h4>
+      <p>₱ <span class="p-price">500</span></p>
+      <button class="add-btn">Add to Cart</button>
+   </div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Bio-Oil Skincare Oil Review.jpg" alt="Centella Cleansing Oil">
+     <h4 class="p-name">Centella Cleansing Oil</h4>
+     <p>₱ <span class="p-price">1500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Medicube Salmon DNA Serum – Pink Glow, Firm & Hydrate Under $20.jpg" alt="Salicylic Acid Daily Wash">
+     <h4 class="p-name">Salicylic Acid Daily Wash</h4>
+     <p>₱ <span class="p-price">2000</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/download (34).jpg" alt="Gentle Milk Cleanser">
+     <h4 class="p-name">Gentle Milk Cleanser</h4>
+     <p>₱ <span class="p-price">1334</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/download (31).jpg" alt="The Ordinary">
+     <h4 class="p-name">The Ordinary</h4>
+     <p>₱ <span class="p-price">800</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/download (32).jpg" alt="Cleansing Balm">
+     <h4 class="p-name">Cleansing Balm</h4>
+     <p>₱ <span class="p-price">550</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/download (33).jpg" alt="Natural Body Scub">
+     <h4 class="p-name">Natural Body Scub</h4>
+     <p>₱ <span class="p-price">1563</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/download (35).jpg" alt="Tone-up Cream">
+     <h4 class="p-name">Tone-up Cream</h4>
+     <p>₱ <span class="p-price">390</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/glossier full orbit hydrating brightening smoothing eye cream.jpg" alt="Glossier">
+     <h4 class="p-name">Glossier</h4>
+     <p>₱ <span class="p-price">450</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Dewy Glow Moisturizer with Cherry Blossom & Niacinamide - innisfree _ Sephora.jpg" alt="Glow Jelly Cream">
+     <h4 class="p-name">Glow Jelly Cream</h4>
+     <p>₱ <span class="p-price">2754</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Gua Sha Wholesale Supplier & Manufacturer, Guasha Custom Factory.jpg" alt="Gua Sha">
+     <h4 class="p-name">Gua Sha</h4>
+     <p>₱ <span class="p-price">300</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Bjewel Pink Aloe Cool Calming Sun Cream 1_35oz _ 40ml Spf 50+ _ Pa++++ K-beauty.jpg" alt="Sunscreen">
+     <h4 class="p-name">Sunscreen</h4>
+     <p>₱ <span class="p-price">700</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Anua - Niacinamide 10 TXA 4 Serum _ YesStyle.jpg" alt="Retinol 0.2% in Squalane">
+     <h4 class="p-name">Retinol 0.2% in Squalane</h4>
+     <p>₱ <span class="p-price">1550</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Hidrata, calma y regenera desde la primera aplicación🤩.jpg" alt="Collagen Boosting Ampoule">
+     <h4 class="p-name">Collagen Boosting Ampoule</h4>
+     <p>₱ <span class="p-price">450</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/ANAIRUI Natural Pink Rose Clay Face Mask for Brighten Moisturize Skin.jpg" alt="Clay Mask">
+     <h4 class="p-name">Clay Mask</h4>
+     <p>₱ <span class="p-price">3664</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Medicube Collagen Jelly Cream.jpg" alt="Collagen Jelly Cream">
+     <h4 class="p-name">Collagen Jelly Cream</h4>
+     <p>₱ <span class="p-price">420</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Overnight Face Masks to Soften, Hydrate, and Brighten While You Snooze.jpg" alt="Night Treatment">
+     <h4 class="p-name">Night Treatment</h4>
+     <p>₱ <span class="p-price">480</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Pore Solution.jpg" alt="Pore Solution">
+     <h4 class="p-name">Pore Solution</h4>
+     <p>₱ <span class="p-price">2856</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Comfortable Soft Plush Sleep Eye Mask Sleeping Masks Night Eyeshade Women Traveling Eye Patch Cute Design Cozy Fluffy Eye Mask - Gray.jpg" alt="Sleeping Mask">
+     <h4 class="p-name">Sleeping Mask</h4>
+     <p>₱ <span class="p-price">399</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Trying to get a handle on dark spots and pigmentation at home_ Experts say _this_ is how treat hyperpigmentation.jpg" alt="Pure Vitamin">
+     <h4 class="p-name">Pure Vitamin</h4>
+     <p>₱ <span class="p-price">1500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Uso próprio em skincare para circulação do sangue em seu rosto.jpg" alt="Facial Roller">
+     <h4 class="p-name">Facial Roller</h4>
+     <p>₱ <span class="p-price">350</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/TIRTIR - Tónico Facial Milk Skin Toner _ YesStyle.jpg" alt="Milk Skin Toner"> 
+     <h4 class="p-name">Milk Skin Toner</h4>
+     <p>₱ <span class="p-price">590</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="skincare">
+     <img src="img/Salmon DNA PDRN Pink Collagen Jelly Gel Mask _ Overnight Face Mask For Glass Glow Skin- Elasticity, Hydrating, Firming And Moisturizing _ Korean Skincare, 28g, 4ea.jpg" alt="Jelly Mask">
+     <h4 class="p-name">Jelly Mask</h4>
+     <p>₱ <span class="p-price">600</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<!-- HAIR & BODY -->
+<div class="product" data-category="hairbody">
+      <img src="img/download (38).jpg" alt="Shampoo Floral">
+      <h4 class="p-name">Shampoo Floral</h4>
+      <p>₱ <span class="p-price">800</span></p>
+      <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/SMOOTH Conditioner.jpg" alt="Conditioner Smooth">
+     <h4 class="p-name">Conditioner Smooth</h4>
+     <p>₱ <span class="p-price">1000</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+      <img src="img/MONDAY Haircare DEEP MOISTURE Hair Mask with Keratin, Argan Oil, Shea Butter & Coconut Oil for Dry to Damaged Hair 250 ml, Haircare DEEP MOISTURE Hair Mask - Walmart_ca.jpg" alt="Hair Mask">
+      <h4 class="p-name">Hair Mask</h4>
+      <p>₱ <span class="p-price">780</span></p>
+      <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+      <img src="img/Experts Say These Hair Growth Serums Can Actually Help Promote Thicker, Longer Strands.jpg" alt="Hair Serum">
+      <h4 class="p-name">Hair Serum</h4>
+      <p>₱ <span class="p-price">956</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/&honey Melty Moist Shine Hair Oil 3_0 (100ml).jpg" alt="Hair Oil">
+     <h4 class="p-name">Hair Oil</h4>
+     <p>₱ <span class="p-price">674</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/download (39).jpg" alt="Body Wash Rose">
+     <h4 class="p-name">Body Wash Rose</h4>
+     <p>₱ <span class="p-price">1300</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/Sunday Rain Rose Body Scrub.jpg" alt="Body Scrub">
+     <h4 class="p-name">Body Scrub</h4>
+     <p>₱ <span class="p-price">2100</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/Body.jpg" alt="Body Lotion">
+     <h4 class="p-name">Body Lotion</h4>
+     <p>₱ <span class="p-price">1600</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+       <img src="img/@flowerknows_global Strawberry Cupid Scented Hand Cream🍓🍬__Get it Now!!!!_Yoonxy703__Keep your hands soft and sweet 🍓🍬 with Flower Knows Strawberry Cupid Scented Hand Cream—nourishing hydration wrapped in a dre.jpg" alt="Hand Cream">
+       <h4 class="p-name">Hand Cream</h4>
+       <p>₱ <span class="p-price">745</span></p>
+       <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/13 Foot Creams for Callus-Free Toes and Heels.jpg" alt="Foot Cream">
+     <h4 class="p-name">Foot Cream</h4>
+     <p>₱ <span class="p-price">300</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/marc jacobs🌸.jpg" alt="Perfume Floral">
+     <h4 class="p-name">Perfume Floral</h4> 
+     <p>₱ <span class="p-price">3500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/PARFUMS de MARLY Delina Perfume Hair Mist _ Dillard's.jpg" alt="Hair Mist">
+     <h4 class="p-name">Hair Mist</h4>
+     <p>₱ <span class="p-price">1700</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/Stocking Stuffers.jpg" alt="Body Mist">
+     <h4 class="p-name">Body Mist</h4>
+     <p>₱ <span class="p-price">2400</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/Payot - Rituel Douceur - Déodorant roll-on fraîcheur 24h sans alcool - Unisexe  Taille - 75ml.jpg" alt="Deodorant Roll-on">
+     <h4 class="p-name">Deodorant Roll-on</h4>
+     <p>₱ <span class="p-price">500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/download (40).jpg" alt="Bath Soap">
+     <h4 class="p-name">Bath Soap</h4>
+     <p>₱ <span class="p-price">500</span></p>
+     <button class="add-btn">Add to Cart</button>   
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/Sunday Rain Bath Crystal Salts Watermelon & Mint-No colour.jpg" alt="Bath Salt">
+     <h4 class="p-name">Bath Salt</h4>
+     <p>₱ <span class="p-price">670</span></p>
+     <button class="add-btn">Add to Cart</button>  
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/This Is the Body Oil That Keeps My Skin Glowy All Winter Long.jpg" alt="Body Oil">
+     <h4 class="p-name">Body Oil</h4>
+     <p>₱ <span class="p-price">2500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/download (41).jpg" alt="Hair Brush">
+     <h4 class="p-name">Hair Brush</h4>
+     <p>₱ <span class="p-price">300</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+       <img src="img/🤍🤍🤍.jpg" alt="Hair Clips">
+       <h4 class="p-name">Hair Clips</h4>
+       <p>₱ <span class="p-price">200</span></p>
+       <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+       <img src="img/6pcs_Set Cute & Sweet Apricot Colored Scrunchies Hair Ties, Suitable For Daily Life, Vacation And Leisure.jpg" alt="Hair Tie Set">
+       <h4 class="p-name">Hair Tie Set</h4>
+       <p>₱ <span class="p-price">200</span></p>
+       <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/Gommage moussant 🫧.jpg" alt="Body Butter">
+     <h4 class="p-name">Body Butter</h4>
+     <p>₱ <span class="p-price">1400</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/FootFitter Exfoliating Foot Scrub & Pumice Stone Set – Sea Salt Foot Scrub & Natural Volcanic Pumi….jpg" alt="Foot Scrub">
+     <h4 class="p-name">Foot Scrub</h4>
+     <p>₱ <span class="p-price">1700</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/Rosewater and Ivy Bath and Body Works.jpg" alt="Hand Wash">
+     <h4 class="p-name">Hand Wash</h4>
+     <p>₱ <span class="p-price">2500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+      <img src="img/Hawaiian Tropic Sheer Touch Ultra Radiance Lotion Sunscreen SPF 70, 8oz _ Hawaiian Tropic Sunscreen SPF 70, Sunblock, Broad Spectrum Sunscreen, Oxybenzone Free Sunscreen, Body Sunscreen, 8oz.jpg" alt="Body Sunscreen">
+      <h4 class="p-name">Body Sunscreen</h4>
+      <p>₱ <span class="p-price">349</span></p>
+      <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/Hair Perfume _ Warm Sugar.jpg" alt="Hair Spray">
+     <h4 class="p-name">Hair Spray</h4>
+     <p>₱ <span class="p-price">1435</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/Hair wax stick.jpg" alt="Hair Wax">
+     <h4 class="p-name">Hair Wax</h4>
+     <p>₱ <span class="p-price">2500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+      <img src="img/download (42).jpg" alt="Body Powder">
+      <h4 class="p-name">Body Powder</h4>
+      <p>₱ <span class="p-price">2432</span></p>
+      <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/Cherry Print Satin Shower Cap.jpg" alt="Shower Cap">
+     <h4 class="p-name">Shower Cap</h4>
+     <p>₱ <span class="p-price">200</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/LOAFAH BATH SPONGE _🏷️4000__Your skincare game needs a serious upgrade …Elevate your selfcare game and reclaim your radiance with our LOAFAH BATH SPONGE __Shop now 🛍️__📞0719997945.jpg" alt="Body Sponge">
+     <h4 class="p-name">Body Sponge</h4>
+     <p>₱ <span class="p-price">200</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product" data-category="hairbody">
+     <img src="img/Parfums de Marly Delina Exclusif Parfum _ Nordstrom.jpg" alt="Luxury Perfume">
+     <h4 class="p-name">Luxury Perfume</h4>
+     <p>₱ <span class="p-price">5500</span></p>
+     <button class="add-btn">Add to Cart</button>
+</div>
+</main>
+
+<!-- CART -->
+<div id="cart-sidebar">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <i class="fa-solid fa-times" id="close-cart"></i>
+  </div>
+
+  <div class="cart-items" id="cart-list"></div>
+
+  <div class="cart-footer">
+    <h3>Total: ₱<span id="total-price">0</span></h3>
+    <button class="checkout-btn" id="checkout">Checkout Now</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
