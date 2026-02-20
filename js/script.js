@@ -50,7 +50,7 @@ $(document).ready(function () {
         // Success Animation and Redirect
         Swal.fire({
             icon: "success",
-            title: "Welcome back!",
+            title: "Welcome ",
             text: "Logging you into Aren Beauty...",
             timer: 1500,
             showConfirmButton: false,
