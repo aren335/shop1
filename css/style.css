@@ -489,4 +489,67 @@ header {
   color: #333; /* Darker on hover */
 }
 
+/* --- UNIVERSAL RESPONSIVENESS --- */
 
+/* 1. Header & Navigation */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .brand-container {
+        justify-content: center;
+    }
+
+    /* Stack buttons for easier tapping */
+    header div[style*="display:flex"] {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* 2. Product Grid Adaptation */
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Smaller cards for small phones */
+        gap: 15px;
+        padding: 0 10px 80px;
+    }
+
+    .product img {
+        height: 180px; /* Shorter images on mobile */
+    }
+
+    .p-name {
+        font-size: 0.9rem;
+    }
+}
+
+/* 3. Attendance / Registration Dashboard */
+@media (max-width: 992px) {
+    .attendance-container {
+        flex-direction: column; /* Stacks Form on top of Table */
+        align-items: center;
+    }
+
+    .registration-box {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .table-card {
+        width: 100%;
+    }
+}
+
+/* 4. Cart Sidebar for Mobile */
+@media (max-width: 400px) {
+    #cart-sidebar {
+        width: 100%; /* Full screen cart on very small devices */
+        right: -100%;
+    }
+}
