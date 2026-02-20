@@ -292,8 +292,8 @@ header {
 }
 
 .add-btn i {
-  margin-right: 8px; /* Adds space between icon and text */
-  font-size: 0.9em;   /* Makes icon slightly smaller to match text */
+  margin-right: 8px; 
+  font-size: 0.9em;   
 }
 
 .product {
@@ -380,17 +380,17 @@ header {
 
 .attendance-container {
     display: flex;
-    flex-direction: row; /* Aligns items horizontally */
-    align-items: flex-start; /* Keeps tops aligned if heights differ */
+    flex-direction: row; 
+    align-items: flex-start; 
     justify-content: center;
-    gap: 30px; /* Space between the form and the table */
+    gap: 30px; 
     padding: 40px 5%;
     max-width: 1400px;
     margin: 0 auto;
 }
-/* Make the registration box match the login style but allow it to sit in flow */
+
 .registration-box {
-    flex: 0 0 380px; /* Do not grow, do not shrink, stay 380px wide */
+    flex: 0 0 380px; 
     background: var(--coquette-card);
     padding: 40px;
     border-radius: 30px;
@@ -402,13 +402,13 @@ header {
 
 /* --- TABLE STYLING --- */
 .table-card {
-    flex: 1; /* Grows to fill the rest of the container */
+    flex: 1; /
     background: var(--coquette-card);
     padding: 30px;
     border-radius: 30px;
     border: 2px solid var(--white);
     box-shadow: 0 15px 35px rgba(255, 182, 193, 0.2);
-    min-width: 0; /* Prevents table from breaking flexbox width */
+    min-width: 0; 
 }
 .table-card h2 {
     color: var(--deep-pink);
@@ -417,8 +417,7 @@ header {
 }
 
 .table-wrapper {
-    overflow-x: auto; /* For mobile responsiveness */
-}
+    overflow-x: auto; 
 
 #qTable {
     width: 100%;
@@ -458,15 +457,13 @@ header {
     font-style: italic;
 }
 
-
-/* Styles for Facebook-style password toggle */
 .password-container {
   position: relative;
   width: 100%;
 }
 .password-container input {
   width: 100%;
-  padding-right: 40px; /* Space for the eye icon */
+  padding-right: 40px; 
 }
 .eye-btn {
   position: absolute;
@@ -476,7 +473,7 @@ header {
   background: none;
   border: none;
   cursor: pointer;
-  color: #666; /* Subtle gray like Facebook */
+  color: #666; 
   font-size: 16px;
   padding: 0;
   width: 20px;
@@ -486,7 +483,7 @@ header {
   justify-content: center;
 }
 .eye-btn:hover {
-  color: #333; /* Darker on hover */
+  color: #333; 
 }
 
 /* --- UNIVERSAL RESPONSIVENESS --- */
@@ -503,7 +500,7 @@ header {
         justify-content: center;
     }
 
-    /* Stack buttons for easier tapping */
+   
     header div[style*="display:flex"] {
         width: 100%;
         justify-content: center;
@@ -514,13 +511,13 @@ header {
 /* 2. Product Grid Adaptation */
 @media (max-width: 480px) {
     .products-grid {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Smaller cards for small phones */
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
         gap: 15px;
         padding: 0 10px 80px;
     }
 
     .product img {
-        height: 180px; /* Shorter images on mobile */
+        height: 180px; 
     }
 
     .p-name {
@@ -531,7 +528,7 @@ header {
 /* 3. Attendance / Registration Dashboard */
 @media (max-width: 992px) {
     .attendance-container {
-        flex-direction: column; /* Stacks Form on top of Table */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -549,7 +546,7 @@ header {
 /* 4. Cart Sidebar for Mobile */
 @media (max-width: 400px) {
     #cart-sidebar {
-        width: 100%; /* Full screen cart on very small devices */
+        width: 100%; 
         right: -100%;
     }
 }
